@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professores</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      .bordaVer {
+        border: 2px solid red;
+      }
+      .header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      .title {
+        border-bottom: 2px solid black;
+        width: 30%;
+        font-size: 320%;
+        font-family: serif;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+      }
+      .card {
+        border-radius: 10px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+      }
+      .info {
+        text-align: center;
+        font-family: serif;
+        font-size: larger;
+      }
+      @media (max-width: 768px) {
+        .title {
+          font-size: 200%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container-fluid header p-md-5 p-2 col-12">
+        <p class="title">Livros</p>
+      </div>
+      <div class="container-sm content mx-auto p-5">
+        <div class="col-md-6 container-md card mx-auto p-4">
+          <img
+            src="./media/annie-spratt-gl7joOaABlI-unsplash.jpg"
+            alt="imagemLivro"
+            style="width: 100px"
+          />
+          <p class="info">Título</p>
+          <p class="info">Autor</p>
+        </div>
+        <div class="col-md-6 container-md card mx-auto p-4">
+          <img
+            src="./media/annie-spratt-gl7joOaABlI-unsplash.jpg"
+            alt="imagemLivro"
+            style="width: 100px"
+          />
+          <p class="info">Título</p>
+          <p class="info">Autor</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
